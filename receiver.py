@@ -33,7 +33,7 @@ def set_motor_b(forward, speed):
 
 
 
-HOST = "192.168.1.104" 
+HOST = socket.gethostbyname(socket.gethostname()) 
 PORT = 65432  
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:

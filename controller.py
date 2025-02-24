@@ -2,9 +2,9 @@
 from tkinter import Label, Tk, Button
 import socket
 from time import sleep
+from sys import argv
 
-
-ip_address = "192.168.1.104" # pi's ip
+ip_address = argv[1] # pi's ip
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 PORT = 65432  
 s.connect((ip_address, PORT))
